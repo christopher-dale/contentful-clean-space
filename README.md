@@ -1,6 +1,6 @@
 contentful-clean-space
 ======================
-CLI toop to delete all content entries from a specified environment. This fork removes any places where the environment is defaulted to 'master' and makes `env` a required option.
+CLI tool to delete all content entries from a specified environment. This fork removes any places where the environment is defaulted to 'master' and makes `env` a required option.
 
 [Contentful CLI](https://github.com/contentful/contentful-cli) doesn't have a command to delete all entries from a space without deleting the space itself. However, this can be very useful, e.g. for user contract testing.
 
