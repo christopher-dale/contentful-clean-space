@@ -16,7 +16,6 @@ export async function main() {
     .option('env', {
       type: 'string',
       describe: 'Contentful environment',
-      default: 'master',
       demandOption: false
     })
     .option('accesstoken', {
@@ -54,7 +53,7 @@ export async function main() {
   const isContentTypes: boolean = argv['content-types'];
   const yes: boolean = argv['yes'];
 
-  const env: string = argv['env'] || 'master';
+  const env: string = argv['env'];
 
   const contentfulManagementClient = createClient({
     accessToken
